@@ -64,9 +64,9 @@ margin-left: 20%;
 }
 
 #hirlevél{
-  margin-left: 40%;
+  text-align: center;
   font-size: 150%;
-  padding-top: 0%;
+  
 }
 
 #mert{
@@ -74,11 +74,40 @@ margin-left: 20%;
 }
 
 #ird{
-  padding-left: 40%;
+  text-align: center;
 }
 
 #valasz{
   font-size: 150%;
-  margin-bottom: -0%;;
+  text-align: left;
+  margin-top: -3%; 
   
+  
+}
+
+#box{
+  font-size: 150%;
+  margin: 0%;
+  text-align: center;
+}
+
+#image{
+padding-left: 60%;
+height: 10%;
+width: 20%;
+
+}
+
+#f{
+  size: 150%;
+}
+
+#g{
+  size: 150%;
+  margin-top: 0; 
+}
+
+#rend{
+  margin-left: 20%;
+  margin-top: -50%;
 }
