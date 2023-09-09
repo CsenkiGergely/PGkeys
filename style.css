@@ -1,6 +1,6 @@
 
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -12,25 +12,28 @@ padding-right: 20px;
 }
 
 body {
-    background-color: #000000;
-    overflow: hidden;
+  background-color: #000; 
+  overflow: hidden; 
+}
+
+#mozgoHatter {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff); /* Mozgó háttér színátmenet */
+  background-size: 200% 200%; 
+  animation: mozgoHatterAnimacio 10s ease infinite; 
+}
+
+@keyframes mozgoHatterAnimacio {
+  0% {
+    background-position: 0% 50%; 
   }
-  
-  .galaxy {
-    width: 100%;
-    height: 100%;
-    background: url('galaxis.jpg');
-    animation: galaxyAnimation 60s linear infinite;
+  100% {
+    background-position: 100% 50%; 
   }
-  
-  @keyframes galaxyAnimation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: -2000px -2000px;
-    }
-  }
+}
+
 
   #kesz{
     height: 50%;
@@ -44,12 +47,12 @@ body {
   }
 
   h1{
-    color: white;
+    
     margin-left: 38%;
   }
 
 p{
-  color: white;
+  
   margin-left: 23%;
   margin-right: 25%;
 }
@@ -92,10 +95,11 @@ margin-left: 20%;
 }
 
 #image{
-padding-left: 60%;
-height: 10%;
+margin-left: 55%;
+height: 20%;
 width: 20%;
-
+margin-bottom: -10%;
+margin-top: -10%;
 }
 
 #f{
@@ -111,3 +115,4 @@ width: 20%;
   margin-left: 20%;
   margin-top: -50%;
 }
+
