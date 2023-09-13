@@ -11,28 +11,6 @@ padding-left: 10px;
 padding-right: 20px;
 }
 
-body {
-  background-color: #000; 
-  overflow: hidden; 
-}
-
-#mozgoHatter {
-  position: absolute; 
-  width: 100%; 
-  height: 100%; 
-  background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff); /* Mozgó háttér színátmenet */
-  background-size: 200% 200%; 
-  animation: mozgoHatterAnimacio 10s ease infinite; 
-}
-
-@keyframes mozgoHatterAnimacio {
-  0% {
-    background-position: 0% 50%; 
-  }
-  100% {
-    background-position: 100% 50%; 
-  }
-}
 
 
   #kesz{
@@ -48,7 +26,7 @@ body {
 
   h1{
     
-    margin-left: 38%;
+    text-align: center;
   }
 
 p{
@@ -63,11 +41,12 @@ margin-left: 20%;
 }
 #elerhetes{
   font-size: 150%;
-  margin-top: -2.6%;
+  margin-top: -6%;
+  margin-bottom: -1%;
 }
 
 #hirlevél{
-  text-align: center;
+  
   font-size: 150%;
   
 }
@@ -89,17 +68,17 @@ margin-left: 20%;
 }
 
 #box{
+  border-radius: 10%;
   font-size: 150%;
-  margin: 0%;
+  margin-top: 3%;
   text-align: center;
 }
 
 #image{
 margin-left: 55%;
-height: 20%;
+
 width: 20%;
-margin-bottom: -10%;
-margin-top: -10%;
+margin-top: -20%;
 }
 
 #f{
@@ -116,3 +95,24 @@ margin-top: -10%;
   margin-top: -50%;
 }
 
+#e-mail{
+  margin-left: 19.5%;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-right: 69%;
+  margin-bottom: 1%;
+}
+
+#div{
+  padding-left: 30%;
+}
+
+#keret{
+  border: 3px solid black;
+  border-radius: 20px;
+  
+}
+
+#kepek{
+  width: 50%;
+}
