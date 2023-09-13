@@ -5,54 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PGkeys</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
-    <style>
-      canvas {
-        display: block;
-      }
-    </style>
+    
     <title>Főoldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="mozgoHatter">
-  <nav class="navbar navbar-expand-lg bg-light">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-
-
+      <a class="navbar-brand" href="index.html"><img src="kesz.png" alt="" id="kepek"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><img src="kesz.png" alt="kesz" id="kesz"></a>
+            <a class="nav-link active" aria-current="page" href="billentyűzetek.html">Billentyűzet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="billentyűzetek.html">BILLENTTYŰZETEK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="billentyűzetek kiegészítői.html">BILLENTTYŰZETEK KIEGÉSZÍTŐK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kapcsolók.html">KAPCSOLÓK</a>
-
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kosar.html"><img src="Kosar.png" alt="" id="kosar"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
+            <a class="nav-link" href="billentyűzetek kiegészítői.html">Billentyűzetek kiegészítői</a>
           </li>
           <li class="nav-item dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="kosar.html"></a></li>
               <li><a class="dropdown-item" href="#"></a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#"></a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="keresés" placeholder="Keresés" aria-label="Keresés">
-          <button class="btn btn-outline-success" type="submit">Keresés</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -61,23 +47,33 @@
 <p id="mert">A PGkeys Gaming Keyboard volt a világ első teljesen moduláris mechanikus játékbillentyűzete. Billentyűzeteink és tartozékaink úgy készültek, hogy maximális ergonómiai kényelmet, teljesítményt és testreszabhatóságot biztosítsanak a páratlan gépelési élmény érdekében.</p>
 <img src="billentyűzet.png" alt="billentyűzet" id="b">
 <hr>
-<p id="hirlevél"><b>HÍRLEVÉL:</b></p>
+
+<div id="div">
+  <p id="hirlevél"><b>HÍRLEVÉL:</b></p>
+  <input style="width: 200px;" type="text" id="e-mail" placeholder="Írja be az e-malil címet">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#" id="keret">Feliratkozás!</a>
+  </li>
+</div>
 
 
 
-<form class="d-flex" role="search" id="ird">
-  <input class="form-control me-2" type="keresés" placeholder="Írja be az E-mail címét" aria-label="Keresés">
-</form>
-<p id="elerhetes"><b>ELÉRHETŐSÉGEK:</b></p>
-<p id="box"><button>Feliratkozás!</button></p>
-<img src="PGkeysoldal.png" alt="PGkeysoldal" id="image">
-<p id="valasz">pgkeys.com</p>
-<p id="f">info@pgkeys.com</p>
-<p id="g">Budapest, XYZ utca 10.</p>
 
-
+<div id="elerhetes">
+  <p><b>ELÉRHETŐSÉGEK:</b></p>
+  <p>pgkeys.com</p>
+<p>info@pgkeys.com</p>
+<p>Budapest, XYZ utca 10.</p>
 
 </div>
+
+
+<img src="PGkeysoldal.png" alt="PGkeysoldal" id="image">
+
+
+
+
+
 
 
 
