@@ -4,78 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PGkeys</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <title>Billentyűzetek kiegészítői</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@100;500;800&family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>PGK2</title>
 </head>
-<body>
-  <div id="mozgoHatter">
-  <nav class="navbar navbar-expand-lg bg-light">
+<body style="background-color: white; min-width: 375px;"  >
+
+  <style>
+    #pos{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    float: right;
+  }
+    #pos1{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
+    text-align: center;
+    height: -20px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+  </style>
+   <!-- fej-->
+   <nav class="navbar navbar-expand-lg bg-white" style="font-family: 'K2D', sans-serif; font-weight: bold;">
     <div class="container-fluid">
-      
-      
+      <a class="navbar-brand" href="#">
+        <img src="kesz.png" href="index.html" alt="Logo" width="60" height="50" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><img src="kesz.png" alt="" id="kesz"></a>
+            <a class="nav-link active text-black" aria-current="page" href="index.html">FŐOLDAL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="billentyűzetek.html">BILLENTTYŰZETEK</a>
+            <a class="nav-link active text-black" aria-current="page" href="billentyűzetek.html">BILLENTYŰZETEK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="billentyűzetek kiegészítői.html"><b>BILLENTTYŰZETEK KIEGÉSZÍTŐK</b></a>
+            <a class="nav-link text-black" href="billentyűzetek kiegészítői.html">BILLENTYŰZETEK KIEGÉSZÍTŐK</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kapcsolók.html">KAPCSOLÓK</a>
 
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="kosar.html"><img src="Kosar.png" alt="" id="kosar"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
+            <a class="nav-link text-black" href="">
+             <li class="nav-item" style="font-weight: bold;">
+              <a class="btn btn-outline-success text-black"  href="cart.html" style="height: 40px; border: 2px green solid;"  id="pos1">
+                Kosár:
+                <span id="count" >0</span>, Ár:
+                <span id="sum">0</span>
+            </a>
+              <br>
+            </li>
+            </a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="keresés" placeholder="Keresés" aria-label="Keresés">
-          <button class="btn btn-outline-success" type="submit">Keresés</button>
-        </form>
       </div>
     </div>
   </nav>
-<hr>
+
+   <!-- fej-->
+
+   
+
+   <hr style="border: 2px solid black; margin-top: -5px;" >
+
+
+
+   <style>
+    .filterDiv {
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin: 2px;
+      display: none;
+    }
+    
+    .show {
+      display: block;
+    }
+    
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    </style>
+    <body>
+    <div style="max-width: 1320px; text-align: center; margin: 0 auto; ">
+    <h2 style="font-family: 'K2D', sans-serif; font-weight: bold; text-align: start; padding-left: 30px;">KIEGÉSZÍTŐK</h2>
+    
+    <div id="myBtnContainer" style="text-align: start; padding-left: 30px;">
+      <button class="btn active" onclick="filterSelection('all')"> Minden</button>
+      <button class="btn" onclick="filterSelection('kapcs')"> Kapcsolók</button>
+      <button class="btn" onclick="filterSelection('kab')"> Kábelek</button>
+      <button class="btn" onclick="filterSelection('kups')"> Kupakok</button>
+    </div>
+  </div>
+
+    <style>
+      .filterDiv{
+        background-color: white;
+        border: 5px solid black;
+        border-radius: 5px;
+        color: black;
+        font-family: 'K2D', sans-serif; 
+        font-weight: bolder; 
+        text-align: center;
+
+      }
+    </style>
+    <div class="container " style="text-align: center;">
+      <div class="raw">
+      <div class="filterDiv kapcs " style="width: 355px; height: 300px; ">
+        <h3>PGK GREEN</h3>
+        <img src="pgkgreen.webp" alt="" style="width: 300px;">
+      </div>
+      <div class="filterDiv kab " style="width: 355px; height: 300px;">
+        <H3></H3>
+      </div>
+      <div class="filterDiv kab " style="width: 355px; height: 300px;">
+        Kábelek
+      </div>
+      <div class="filterDiv kups " style="width: 355px; height: 300px;">
+        Kupakok 
+      </div>
+      <div class="filterDiv kups " style="width: 35px; height: 300px;">
+        Kupakok 
+      </div>
+    </div>
+    </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+      
+      <hr style="border: 2px solid black; " >
 
 
 
 
+        <div class="container justify-content-center">
+          <div class="row" style="font-family: 'K2D', sans-serif; font-weight: 600; font-size: 90%;  text-align: center;">
+            <div class="col-12 col-md-4 " >
+              <div style="width: 300px; margin-left: 20%;" >
+              <p style="font-family: 'K2D', sans-serif; font-weight: 700; text-align: left; margin-left: 15px;">ELÉRHETŐSÉGEK:</p>
+              <ul style="list-style-type:square; width: 200px; text-align: left;">
+                <li>pgkeys.com</li>
+                <li>info@pgkeys.com</li>
+                <li>Budapest, XYZ utca 10.</li>
+              </div>
+              </ul>
+        
+            </div>
+            <div class="col-12 col-md-4 justify-content-center">
+              <div id="div">
+                <p style="font-family: 'K2D', sans-serif; font-weight: 700;">HÍRLEVÉL:</p>
+              <form>
+                <div style="font-family: 'K2D', sans-serif; font-weight: 700;">
+                  <div><label for="email">Írja be az e-malil címet:</label></div>
+                  <div><input type="email" id="email" name="email" style="border: 2px black solid; border-radius: 3px;"></div>
+                  <div><input type="submit"  style="border: 2px black solid; border-radius: 3px; margin-top: 5px; font-family: 'K2D', sans-serif; font-weight: 700;"></div>
+                </div>
+              </form>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="PGkeysoldal.png" alt="pgkeys_logo" style="width: 300px;">
+            </div>
+          </div>
+        </div>
+        
+        <style>
+          .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          
+          .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+          }
+          
+          .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+          
+          .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+          }
+          
+          @-webkit-keyframes fadeIn {
+            from {opacity: 0;} 
+            to {opacity: 1;}
+          }
+          
+          @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+          }
+          </style>
+          <script>
+        
+          function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+          }
+          </script>
 
 
 
 
-
-<hr>
-<p id="hirlevél"><b>HÍRLEVÉL:</b></p>
-
-
-
-<form class="d-flex" role="search" id="ird">
-  <input class="form-control me-2" type="keresés" placeholder="Írja be az E-mail címét" aria-label="Keresés">
-</form>
-<p id="elerhetes"><b>ELÉRHETŐSÉGEK:</b></p>
-<p id="box"><button>Feliratkozás!</button></p>
-<img src="PGkeysoldal.png" alt="PGkeysoldal" id="image">
-<p id="valasz">pgkeys.com</p>
-<p id="f">info@pgkeys.com</p>
-<p id="g">Budapest, XYZ utca 10.</p>
-</div>
+        
+        
 </body>
-</html>
