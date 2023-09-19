@@ -62,11 +62,7 @@
           <li class="nav-item">
             <a class="nav-link text-black" href="">
              <li class="nav-item" style="font-weight: bold;">
-              <a class="btn btn-outline-success text-black"  href="cart.html" style="height: 40px; border: 2px green solid;"  id="pos1">
-                Kosár:
-                <span id="count" >0</span>, Ár:
-                <span id="sum">0</span>
-            </a>
+
               <br>
             </li>
             </a>
@@ -97,8 +93,13 @@
               </ul>
             </div>
             <div style="font-family: 'K2D', sans-serif; font-weight: 600; font-size: 130%;   text-align: center; "  >
-              <p  style="border: 3px solid green; background-color: green; width: 200px; text-align: center ; margin: 0 auto ; border-radius: 10px; margin-top: 30%; margin-bottom: 20px;"><a href="pgk2.html" style="text-decoration: none; color: white; background-color: green;">Vásárlás</a></p>
-             </div>
+              <button class="btn btn-outline-success bg-success text-light" style="margin-bottom: 20px; margin-top: 30%;"  onclick="show()" id="1">Vásárlás</button>
+              <script>
+                function show() {
+                alert("Sikeres vásárlás!");
+                }
+              </script>
+            </div>
           </div>
           <div class="col-md-8 col-12  text-black" >
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -154,7 +155,7 @@
                 <div style="font-family: 'K2D', sans-serif; font-weight: 700;">
                   <div><label for="email">Írja be az e-malil címet:</label></div>
                   <div><input type="email" id="email" name="email" style="border: 2px black solid; border-radius: 3px;"></div>
-                  <div><input type="submit"  style="border: 2px black solid; border-radius: 3px; margin-top: 5px; font-family: 'K2D', sans-serif; font-weight: 700;"></div>
+                  <div><input type="submit"  style="border: 2px black solid; border-radius: 3px; margin-top: 5px; font-family: 'K2D', sans-serif; font-weight: 700;" onclick="show1()"></div>
                 </div>
               </form>
               </div>
@@ -164,7 +165,11 @@
             </div>
           </div>
         </div>
-        
+        <script>
+          function show1() {
+          alert("Sikeres feliratkozás!");
+          }
+        </script>
         <style>
           .popup {
             position: relative;

@@ -42,19 +42,16 @@
             <a class="nav-link active text-black" aria-current="page" href="index.html">FŐOLDAL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-black" aria-current="page" href="billek.html">BILLENTYŰZETEK</a>
+            <a class="nav-link active text-black" aria-current="page" href="billentyűzetek.html">BILLENTYŰZETEK</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-black" href="billentyűzetek kiegészítői.html">BILLENTYŰZETEK KIEGÉSZÍTŐK</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-black" href="">
+            <a class="nav-link text-black" href="kosar.html">
              <li class="nav-item">
-              <a class="btn btn-outline-success text-black" href="cart.html" style="height: 40px; border: 2px green solid;"  id="pos1">
-                Kosár:
-                <span id="count">0</span>, Ár:
-                <span id="sum">0</span>
+
             </a>
               <br>
             </li>
@@ -163,7 +160,7 @@
         <div style="font-family: 'K2D', sans-serif; font-weight: 700;">
           <div><label for="email">Írja be az e-malil címet:</label></div>
           <div><input type="email" id="email" name="email" style="border: 2px black solid; border-radius: 3px;"></div>
-          <div><input type="submit"  style="border: 2px black solid; border-radius: 3px; margin-top: 5px; font-family: 'K2D', sans-serif; font-weight: 700;"></div>
+          <div><input type="submit"  style="border: 2px black solid; border-radius: 3px; margin-top: 5px; font-family: 'K2D', sans-serif; font-weight: 700;" onclick="show1()"></div>
         </div>
       </form>
       </div>
@@ -173,7 +170,11 @@
     </div>
   </div>
 </div>
-
+<script>
+  function show1() {
+  alert("Sikeres feliratkozás!");
+  }
+</script>
 <style>
   .popup {
     position: relative;
